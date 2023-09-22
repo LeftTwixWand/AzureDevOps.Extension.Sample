@@ -1,0 +1,42 @@
+{
+  "manifestVersion": 1,
+  "id": "GetFolderContent",
+  "name": "Get Folder Content",
+  "version": "1.0.0",
+  "publisher": "hansel",
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "description": "This task print out the content of the given directory",
+  "public": false,
+  "categories": [
+    "Azure Pipelines"
+  ],
+  "content": {
+    "details": {
+      "path": "Marketplace.md"
+    }
+  },
+  "icons": {
+    "default": "Images/icon.png"
+  },
+  "files": [
+    {
+      "path": "Tasks/GetFolderContent"
+    }
+  ],
+  "contributions": [
+    {
+      "id": "GetFolderContent",
+      "type": "ms.vss-distributed-task.task",
+      "targets": [
+        "ms.vss-distributed-task.tasks"
+      ],
+      "properties": {
+        "name": "Tasks/GetFolderContent"
+      }
+    }
+  ]
+}
