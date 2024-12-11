@@ -1,9 +1,9 @@
 {
   "manifestVersion": 1,
-  "id": "GetFolderContent",
-  "name": "Get Folder Content",
+  "id": "DynamicLoadingData",
+  "name": "Dynamic Loading Data",
   "version": "1.0.0",
-  "publisher": "hansel",
+  "publisher": "vhorbachov",
   "targets": [
     {
       "id": "Microsoft.VisualStudio.Services"
@@ -24,18 +24,18 @@
   },
   "files": [
     {
-      "path": "Tasks/GetFolderContent"
+      "path": "Tasks/TaskWithDynamicallyLoadedData"
     }
   ],
   "contributions": [
     {
-      "id": "GetFolderContent",
+      "id": "TaskWithDynamicallyLoadedData",
       "type": "ms.vss-distributed-task.task",
       "targets": [
         "ms.vss-distributed-task.tasks"
       ],
       "properties": {
-        "name": "Tasks/GetFolderContent"
+        "name": "Tasks/TaskWithDynamicallyLoadedData"
       }
     }
   ]
