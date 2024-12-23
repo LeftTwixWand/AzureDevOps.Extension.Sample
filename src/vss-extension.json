@@ -2,15 +2,15 @@
   "manifestVersion": 1,
   "id": "DynamicLoadingData",
   "name": "Dynamic Loading Data",
-  "version": "1.0.0",
-  "publisher": "vhorbachov",
+  "version": "1.0.7",
+  "publisher": "VladyslavHorbachov",
   "targets": [
     {
       "id": "Microsoft.VisualStudio.Services"
     }
   ],
   "description": "This task print out the content of the given directory",
-  "public": false,
+  "public": true,
   "categories": [
     "Azure Pipelines"
   ],
@@ -25,6 +25,9 @@
   "files": [
     {
       "path": "Tasks/TaskWithDynamicallyLoadedData"
+    },
+    {
+      "path": "Tasks/TestCreateAndQueryChangeRequest"
     }
   ],
   "contributions": [
@@ -36,6 +39,16 @@
       ],
       "properties": {
         "name": "Tasks/TaskWithDynamicallyLoadedData"
+      }
+    },
+    {
+      "id": "test-serviceNowchangerequests-query-task",
+      "type": "ms.vss-distributed-task.task",
+      "targets": [
+        "ms.vss-distributed-task.tasks"
+      ],
+      "properties": {
+        "name": "Tasks/TestCreateAndQueryChangeRequest"
       }
     }
   ]
